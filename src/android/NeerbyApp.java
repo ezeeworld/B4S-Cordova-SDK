@@ -25,7 +25,7 @@ public class NeerbyApp extends Application {
             Bundle bundle = ai.metaData;
             String appID = bundle.getString("NEERBY_APP_ID");
             // Initialize the B4S SDK with our app-specific registration ID
-            B4SSettings settings = B4SSettings.init(this, NeerbyConstants.NEERBY_APP_ID);
+            B4SSettings settings = B4SSettings.init(this, appID);
 
             // Enable remote push notifications
             // settings.setPushMessagingSenderId("MY-GOOGLE-SENDER-ID");
