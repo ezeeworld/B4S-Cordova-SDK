@@ -1,6 +1,9 @@
 package com.ezeeworld.neerby;
 
 import android.app.Application;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
 
 import com.ezeeworld.b4s.android.sdk.B4SSettings;
 import com.ezeeworld.b4s.android.sdk.B4SUserProperty;
@@ -23,8 +26,6 @@ public class NeerbyApp extends Application {
             String appID = bundle.getString("NEERBY_APP_ID");
             // Initialize the B4S SDK with our app-specific registration ID
             B4SSettings settings = B4SSettings.init(this, NeerbyConstants.NEERBY_APP_ID);
-            settings.setShouldLogMatching(true);
-            settings.setShouldLogScanning(true);
 
             // Enable remote push notifications
             // settings.setPushMessagingSenderId("MY-GOOGLE-SENDER-ID");
