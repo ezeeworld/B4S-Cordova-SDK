@@ -76,7 +76,7 @@
             <string>$NEERBY_APP_ID</string>
         </config-file>
         <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
-            <string>This application uses Bluetooth to detect iBeacon</string>
+            <string>$LOCATION_ALWAYS_USAGE_DESCRIPTION</string>
         </config-file>
     </platform>
 
