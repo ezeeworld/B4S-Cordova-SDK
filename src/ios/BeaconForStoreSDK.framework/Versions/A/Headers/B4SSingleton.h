@@ -38,13 +38,17 @@ extern NSString *const kB4SNotifBeaconId;
 extern NSString *const kB4SNotifBeaconName;
 extern NSString *const kB4SNotifNotificationId;
 extern NSString *const kB4SNotifLocationAccuracy;
+extern NSString *const kB4SNotifShopLatitude;
+extern NSString *const kB4SNotifShopLongitude;
+extern NSString *const kB4SNotifInteractionMaxDistance;
+
 extern NSString *const kB4SNotifDistance;
 extern NSString *const kB4SNotifBeaconRef;
 extern NSString *const kB4SNotifStoreRef;
-extern NSString *const kB4SNotifGroupRef;
-extern NSString *const kB4SNotifGroupName;
-extern NSString *const kB4SNotifGroupId;
 extern NSString *const kB4SNotifShopName;
+extern NSString *const kB4SNotifShopCity;
+extern NSString *const kB4SNotifShopZipCode;
+
 extern NSString *const kB4SNotifShopId;
 extern NSString *const kB4SNotifDate;
 extern NSString *const kB4SNotifActionId;
@@ -80,9 +84,14 @@ extern NSString    *const      kB4SUserPropertyUserGenderKey;
 extern NSString    *const      kB4SUserPropertyUsereMailKey;
 
 /**
+ *  User property language
+ */
+extern NSString    *const      kB4SUserPropertyUserLanguageKey;
+
+/**
  *  User property customer ref
  */
-extern NSString    *const      kB4SUserPropertyUserCustomerRefNameKey;
+extern NSString    *const      kB4SUserPropertyUserClientRefKey;
 
 
 @class B4SSingleton;
@@ -261,6 +270,13 @@ extern NSString    *const      kB4SUserPropertyUserCustomerRefNameKey;
  *  @param userInfo The userInfo dictionary received by the application:didReceiveLocalNotification: method
  */
 - (void)notificationFeedback:(NSDictionary *)userInfo;
+
+#pragma - User knowledge
+
+/**
+ * YES if location tracking is enabled. Default value is YES. Use this to override the value set by the server. This value is ignored if the ATR mode is disabled for your application
+ */
+@property (nonatomic) BOOL enablePositionTracking;
 
 #pragma mark - Initialisation
 /**
