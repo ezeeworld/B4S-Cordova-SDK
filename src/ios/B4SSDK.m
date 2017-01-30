@@ -64,7 +64,6 @@
     NSLog(@"[notificationProcessed] interaction name=%@",[notificationData.userInfo objectForKey:kB4SNotifContentName]);
     NSLog(@"[notificationProcessed] interaction id=%@",[notificationData.userInfo objectForKey:kB4SNotifContentId]);
     NSLog(@"[notificationProcessed] text=%@",[notificationData.userInfo objectForKey:kB4SNotifText]);
-    NSLog(@"[notificationProcessed] group clientRef=%@",[notificationData.userInfo objectForKey:kB4SNotifGroupRef]);
     NSLog(@"[notificationProcessed] store clientRef=%@",[notificationData.userInfo objectForKey:kB4SNotifStoreRef]);
     NSLog(@"[notificationProcessed] beacon clientRef=%@",[notificationData.userInfo objectForKey:kB4SNotifBeaconRef]);
     NSLog(@"[notificationProcessed] beacon udid=%@",[notificationData.userInfo objectForKey:kB4SBeaconUdid]);
