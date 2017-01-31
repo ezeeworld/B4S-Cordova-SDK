@@ -72,7 +72,7 @@
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
             <string>$LOCATION_ALWAYS_USAGE_DESCRIPTION</string>
         </config-file>
-        <config-file target="*-Info.plist" parent="NeerbyAppID">
+        <config-file target="*-Info.plist" parent="Neer.By AppID">
             <string>$NEERBY_APP_ID</string>
         </config-file>
         <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
@@ -89,7 +89,7 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <meta-data android:name="NEERBY_APP_ID" android:value="$NEERBY_APP_ID" />
+            <meta-data android:name="by.neer.sdk.APP_ID" android:value="$NEERBY_APP_ID" />
         </config-file>
 
         <source-file src="src/android/NeerbyApp.java" target-dir="src/com/ezeeworld/neerby" />
