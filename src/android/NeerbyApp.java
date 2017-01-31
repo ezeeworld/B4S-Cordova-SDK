@@ -23,7 +23,7 @@ public class NeerbyApp extends Application {
     try {
             ApplicationInfo ai = getPackageManager().getApplicationInfo(getPackageName(), PackageManager.GET_META_DATA);
             Bundle bundle = ai.metaData;
-            String appID = bundle.getString("NEERBY_APP_ID");
+            String appID = bundle.getString("by.neer.sdk.APP_ID");
             // Initialize the B4S SDK with our app-specific registration ID
             B4SSettings settings = B4SSettings.init(this, appID);
 
